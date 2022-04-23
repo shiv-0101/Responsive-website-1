@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap');
+
+
+body{
+    font-family: 'ubuntu','Lora', sans-serif;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+header{
+    background-color:#F8F8F8 ;
+    margin: 0;
+    padding: 10px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    text-align: center;
+    cursor: pointer;
+}
+.logo h1 {
+    font-family: 'Lora' sans-serif;
+    color: #143774;
+    margin: 0;
+}
+.logo p{
+    color: #1792D2;
+    margin: 0;
+    letter-spacing: .25rem;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+nav li{
+    margin-top: 8px;
+}
+
+nav a{
+    font-family:'ubuntu' sans-serif;
+    color: #717171;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+}
+nav a:hover{
+    color:#474545 ;
+}
+
+@media (min-width:580px){
+    header{
+        padding: 60px 0px ;
+    }
+    .container-flex{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav a{
+        margin-left: 20px;
+        letter-spacing: 1.5px;
+    }
+}
+/* MAIN*/
+main{
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+.current-page{
+    border-bottom: 2px solid #70707073;
+}
+
+/*************
+TYPOGRAPHY
+*************/
+h2{
+    margin: 5px 0px 5px 0px;
+    font-size:1.5rem ;
+}
+h2,
+h3{
+    color: #143774;
+    font-family: 'lora', sans-serif;
+}
+
+.border{
+    width: 100%;
+    margin:20px 0 ;
+    border-bottom: #bab4b4 1.6px solid;
+}
+.article-info, 
+.read-more{
+    font-size: .875rem;
+}
+.article-info{
+    font-family: 'ubuntu', sans-serif;
+    color:#707070 ;
+}
+.article-body{
+  color:#707070 ;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+.read-more{
+    color:#1792D2;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.read-more:hover{
+    color: #104cb4;
+    text-decoration: underline;
+}
+
+/***************
+FEATURED ARTICLE
+***************/
+.featured-article{
+    margin: 0 auto;
+}
+/*************
+RECENT ARTICLE
+*************/
+.recent-article{
+}
+.recent-article-body{
+    color:#707070 ;
+    font-size: 1rem;
+    font-weight: lighter;  
+    line-height: 1.5rem;
+}
+.top-margin{
+    margin-top: 30px;
+}
+.btm-margin{
+    margin-bottom: 30px;
+}
+
+.blue-para{
+    color:#143774;
+}
+/*ASIDE*/
+aside{
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.sec-border{
+    border: 15px solid #EBEBEB ;
+}
+.sidebar-sec2{
+    padding: 20px;
+}
+aside h2{
+    font-family: 'ubuntu', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+.img-aside{
+    max-height: 100px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (min-width:580px){
+  main{
+    width:65%;
+   }     
+
+  aside{
+    width: 25%;
+   }
+  .recent-article{
+    display: flex;
+   }
+  .recent-article-secondary{
+    margin-left: 30px;
+    width: 70%;
+   }
+
+ }
+ /******
+ IMAGES
+ ******/
+ .img-featured{
+     width: 100%;
+ }
+
+ .img-recent{
+     width: 100%;
+     max-height: 30vh;
+     object-fit: cover;
+ }
+
+ @media (min-width:580px){
+ .img-recent{
+     min-height: 25vh;
+     max-width: 170px;
+     object-fit: cover;
+     margin-right: 0;
+   }
+}
+
+/******
+FOOTER
+******/
+footer{
+    background-color:#143774;
+    margin: 0;
+    padding: 30px;
+}
+footer p{
+    text-align: center;
+    margin: 5px;
+    font-family: 'ubuntu' sans-serif;
+    color: #f0f0f0ab;
+}
+.bold{
+    font-weight:bold ;
+}
+.light{
+    font-size: 15px;
+}
+/******* 
+ABOUTME
+*******/
+.about-me{
+    margin-bottom: 100px;
+}
+.aboutme-recentpost{
+     margin-top: 0px;
+}
+.about-me img{
+    max-height:30vh;
+    object-fit: cover;
+    width: 100%;
+}
+.aboutme-para{
+    font-family: 'ubuntu' sans-serif;
+    color: #707070;
+    line-height: 1.5rem;
+}
+.about-me h2{
+    margin-top: 30px;
+}
+.about-me h3{
+    color: #1792D2;
+    font-size: 1.3rem;
+}
